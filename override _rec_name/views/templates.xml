@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+  <data>
+
+<!--    <record model="ir.ui.view" id="employee_list">
+      <field name="name">contrat.list</field>
+      <field name="model">add.addmodels</field>
+         <form>
+        	<field name="arch" type="xml">
+            	<field name="contract_type"/>
+            </field>
+         </form>
+     </record>
+
+      <record model="ir.ui.view" id="employee_tree">
+
+      <field name="name">contrat.tree</field>
+
+      <field name="model">add.addmodels</field>
+         <tree>
+        	<field name="arch" type="xml">
+
+            	<field name="contract_type"/>
+
+            </field>
+         </tree>
+     </record>
+-->
+    </data>
+
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <menuitem name="top menu" id="custom_top_menu"/>
+    <menuitem name="sub child menu" id="custom_sub_menu"
+              parent="custom_top_menu"/>
+    <record model="ir.ui.view" id="employee_tree">
+
+      <field name="name">contrat.tree</field>
+
+      <field name="model">add.addmodels</field>
+
+        	<field name="arch" type="xml">
+            <tree>
+            	<field name="contrat"/>
+            </tree>
+            </field>
+     </record>
+
+<record model="ir.ui.view" id="employee_form">
+      <field name="name">contrat.model.form</field>
+      <field name="model">add.addmodels</field>
+
+        	<field name="arch" type="xml">
+                  <form>
+                          <sheet>
+                              <group>
+                                  <group>
+                                      <field name="contrat"/>
+                                  </group>
+                              </group>
+                           </sheet>
+                   </form>
+             </field>
+     </record>
+
+
+             <record id="contrat_action" model="ir.actions.act_window">
+            <field name="name">Contrat</field>
+            <field name="res_model">add.addmodels</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+             <field name="help" type="html">
+
+                 <p class="oe_nocontent_create">
+
+                     Click here to create new item
+                 </p>
+            </field>
+              </record>
+
+</odoo>
