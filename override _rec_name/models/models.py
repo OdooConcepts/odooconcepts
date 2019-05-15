@@ -7,6 +7,7 @@ class employee(models.Model):
     _inherit = 'hr.employee'
 
     custom_name = fields.Char(string='Record Name: ')
+    active = fields.Boolean(string='Active')
 
     @api.multi
     def name_get(self):
